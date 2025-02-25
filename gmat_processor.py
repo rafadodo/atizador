@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
+"""This script reads result files from a gmat orbital dynamics script run, and processes position and
+attitude data in order to compute solar fluxes on a set of given spacecraft surfaces. The user can
+request plotting of fluxes over time as well as a pointing vectors animation.
 """
 import yaml
 import numpy as np
