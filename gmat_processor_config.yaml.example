@@ -1,14 +1,11 @@
-# Attitude
-run_type: 'NadirPointing'  # Options: 'NadirPointing', 'noAttitude'
+# Plotting Configuration
+plot_flux_graphs: true
+plot_vector_animation: true
 
-# File paths (use placeholders for dynamic insertion in the script)
-gmat_positions_filename_template: '/.../gmat_LEO_{run_type} - report.csv'
-gmat_eclipse_filename_template: '/.../gmat_LEO_{run_type} - EclipseLocator1.txt'
-
-time_format: '%d %b %Y %H:%M:%S.%f'
-solar_radiation: 1361  # W/m^2
-infrared_radiation: 218  # W/m^2
-albedo_fraction: 0.19  # Fraction of solar radiation reflected as albedo
+# File paths
+attitude: 'NadirPointing'  # Options: 'NadirPointing', 'noAttitude'
+positions_filename_template: '/.../gmat_LEO_{attitude} - report.csv'
+eclipse_filename_template: '/.../gmat_LEO_{attitude} - EclipseLocator1.txt'
 
 # Surface normals
 surface_normals:
@@ -18,3 +15,11 @@ surface_normals:
   XM_FACE: [-1, 0, 0]
   YM_FACE: [0, -1, 0]
   ZM_FACE: [0, 0, -1]
+
+# Solar constants
+solar_radiation: 1361  # W/m^2
+infrared_radiation: 218  # W/m^2
+albedo_fraction: 0.19  # Fraction of solar radiation reflected as albedo
+
+# Date formatting
+time_format: '%d %b %Y %H:%M:%S.%f'
