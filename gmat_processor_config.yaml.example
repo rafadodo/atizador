@@ -1,0 +1,20 @@
+# Attitude
+run_type: 'NadirPointing'  # Options: 'NadirPointing', 'noAttitude'
+
+# File paths (use placeholders for dynamic insertion in the script)
+gmat_positions_filename_template: '/.../gmat_LEO_{run_type} - report.csv'
+gmat_eclipse_filename_template: '/.../gmat_LEO_{run_type} - EclipseLocator1.txt'
+
+time_format: '%d %b %Y %H:%M:%S.%f'
+solar_radiation: 1361  # W/m^2
+infrared_radiation: 218  # W/m^2
+albedo_fraction: 0.19  # Fraction of solar radiation reflected as albedo
+
+# Surface normals
+surface_normals:
+  XP_FACE: [1, 0, 0]
+  YP_FACE: [0, 1, 0]
+  ZP_FACE: [0, 0, 1]
+  XM_FACE: [-1, 0, 0]
+  YM_FACE: [0, -1, 0]
+  ZM_FACE: [0, 0, -1]
